@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator odsetek</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <form >
+      <label for="in-cash">Wpłata w PLN</label>
+      <input id="in-cash" value="1000" min="0" type="number" name="in-cash"><br>
+      <br>
+      
+      <select id="capitalise">
+          <option value="12">Miesięcznie</option>
+          <option value="4">Kwartalnie</option>
+          <option value="1" selected="selected">Rocznie</option>
+        </select><br><br>
+        
+      <label for="years">Ilość lat</label>
+      <input id="years" value="1" min="1" type="number" name="years"><br>
+      <br>
+       
+      <label for="percent">Oprocentowanie</label>
+      <input id="percent" value="10" min="0" type="number" name="percent"><br>
+      <br>
+      
+       <label><input id="belka" type="checkbox"> Uwzględnij podatek Belki 19%</label><br><br>
+        
+        
+      <button id="triggerButton">Oblicz</button>
+    </form><br><br><br><br>
+    
+    <div id="wynik">RESULT</div>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
