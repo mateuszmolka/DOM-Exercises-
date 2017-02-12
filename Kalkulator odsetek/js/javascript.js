@@ -7,17 +7,8 @@ function obliczZysk(wplata,iloscLat,okresKapitalizacji,oprocentowanie,podatek){
     }else{
         var oprocentowaneOpodatkowanie=oprocentowanie;
     }
-    console.log(wplata);
-    console.log(okresKapitalizacji);
-    console.log(iloscLat);
-    console.log(oprocentowaneOpodatkowanie);
-    console.log(podatek);
-    
-    
     var potega=iloscLat*okresKapitalizacji;
-    console.log("-----"+potega+"-----");
     var podstawa=(1+(oprocentowaneOpodatkowanie/okresKapitalizacji));
-    
     var kapital=wplata*Math.pow(podstawa,potega);
     
     return kapital.toFixed(2);
